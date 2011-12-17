@@ -302,18 +302,71 @@ div#main {
 }
 
 blockquote {
-    line-height: 32px;
-    font-size: 36px;
+    line-height: 26px;
+    font-size: 32px;
     font-family: 'WindsongRegular';
     font-weight: normal;
-	font-style: normal;
+    font-style: normal;
+    margin: 0px;
 }
 
 span#author {
     color: #555;
-    font-size: 28px;
+    font-size: 32px;
     font-family: 'WindsongRegular';
-    padding-left: 250px;
+    padding-left: 150px;
+}
+
+section#mosaic {
+    width: 350px;
+    border: 10px solid #1D0C16;
+    overflow: visible;
+    background: #272229;
+    -webkit-box-shadow: #303030 8px 8px 2px;
+    -moz-box-shadow: #272229 2px 2px 16px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=10);     
+    box-shadow: #303030 6px 6px 12px;
+}
+
+#mosaic ul {
+    list-style: none;
+    padding: 5px;
+}
+
+#mosaic li {
+    display: inline-table;
+    padding: 5px;
+}
+
+#mosaic li .mini {
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#mosaic ul li .pic {
+   -webkit-transition: all 0.6s ease-in-out;
+   -moz-transition: all 0.6s ease-in-out;
+   -o-transition: all 0.6s ease-in-out;
+   opacity:0;
+   visibility:hidden; 
+   position:absolute; 
+   margin-top:-250px; 
+   margin-left:-150px; 
+   -webkit-box-shadow:#272229 2px 2px 10px;
+   -moz-box-shadow:#272229 2px 2px 10px;
+   filter:progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=5);
+   box-shadow:#272229 2px 2px 10px;
+}
+    
+#mosaic ul li:hover .pic {
+    /* width and height is how much the picture is going to growth with the effect */
+   opacity:1; 
+   visibility:visible; 
+   float:right;
 }
 
 .clear {
@@ -342,7 +395,7 @@ a:hover {
  
 .link {
     font-family: 'AmaranthRegular';
-    font-size: 16px;
+    font-size: 14px;
     background: #B66390;
     display: block;
     padding: 5px;
